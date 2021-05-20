@@ -1,0 +1,76 @@
+:root {
+    --card-gradient: linear-gradient(251.28deg, rgba(98, 99, 196, 0.99) 0%, #DF5642 100%);
+}
+
+.card {
+    background: var(--card-gradient);
+    border-radius: 8px;
+    padding: 1.8rem 1rem;
+    margin: 2em 0 1em 0;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.card .pad {
+    padding: 0 1.6rem;
+}
+
+.card h5 {
+    letter-spacing: 3.2px;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1em;
+}
+
+.card h5.caps {
+    letter-spacing: 1.2px;
+    font-size: 0.7em;
+}
+
+.card .no-pad {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.no-pad img {
+    height: 4rem;
+}
+
+.no-pad img:first-child {
+    height: 1.6rem;
+    margin-right: 0.6rem;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 1px;
+    align-items: center;
+}
+
+.flex img {
+    height: 3rem;
+}
+
+.flex h5 {
+    letter-spacing: 1px;
+}
+
+@media (max-width: 380px) {
+    .card {
+        font-size: 12px;
+        padding: 1rem 0.4rem;
+    }
+    .card h5 {
+        line-height: 1.5rem;
+    }
+    .no-pad img {
+        height: 2.4rem;
+    }
+    .flex img {
+        height: 2rem;
+    }
+}
