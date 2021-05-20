@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 2px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    width: 48%;
+    margin-bottom: 1.6em;
+}
+
+.input-group label {
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--black-text);
+    line-height: 3em;
+}
+
+.input-group input, button {
+    width: 100%;
+    background-color: var(--input-bg);
+    outline: none;
+    border: 1px solid var(--muted-text);
+    padding: 1em;
+    border-radius: 3px;
+}
+
+div.f100 {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    padding: 1.5em;
+
+}

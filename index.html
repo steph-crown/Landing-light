@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./atm-card.css">
+    <link rel="stylesheet" href="./form.css">
     <title>Landing Light</title>
 </head>
 <body>
@@ -72,7 +73,40 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="right">
+                <div class="logos">
+                    <img src="./assets/visa.svg" height="25" alt="Visa">
+                    <img height="37.5" src="./assets/icons8-discover-48.png" style="margin-right: 1.5em;" alt="">
+                    <img height="18.75" src="./assets/transparent-circle.svg" alt="">
+                    <img height="100" src="./assets/paypal.svg" alt="">
+                </div>
+                <form>
+                    <div class="input-group">
+                        <label for="card-number">Credit card number
+                        </label>
+                        <input type="text" value="4324 5433 9382 1030" placeholder="Enter Card Number" name="cardNumber" id="">
+                    </div>
+                    <div class="input-group">
+                        <label for="exp-date">Expiration date</label>
+                        <input type="date" value="04/05/2000" name="expDate" id="exp-date">
+                    </div>
+                    <div class="input-group">
+                        <label for="security-code">Security code</label>
+                        <input type="number" value="420" placeholder="Enter Security Code" name="secCode" id="security-code">
+                    </div>
+                    <div class="input-group">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="number" placeholder="Enter Postal Code" value="10119" name="postCode" id="postal-code">
+                    </div>
+                    <div class="input-group f100">
+                        <input type="radio" name="" id="check">
+                        <label for="check">Use this card for next time purchase</label>
+                    </div>
+                    <div class="input-group f100">
+                        <button type="button">Add Card</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <div class="line"></div>
         jhgxhk

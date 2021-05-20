@@ -84,9 +84,27 @@ p {
     color: var(--muted-text);
 }
 
-.left {
+section.section .left {
     width: 40%;
 }
+
+section.section .right {
+    width: 47%;
+}
+
+.logos {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    min-height: 2px;
+    align-items: center;
+}
+
+.logos img {
+    margin-left: 1em;
+}
+
+
 
 @media (max-width: 860px) {
     .sm-show, .hamburger {
@@ -172,7 +190,11 @@ p {
     section.section {
         display: block;
     }
-    section.section>* {
+    section.section .left {
+        width: 100%;
+    }
+    
+    section.section .right {
         width: 100%;
     }
 }
