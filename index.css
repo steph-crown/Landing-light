@@ -77,14 +77,21 @@ header div.line {
     }
     .hamburger {
         flex-direction: column;
-        min-width: 2px;
-        align-items: flex-start;
+        /* min-width: 2px;
+        align-items: flex-start; */
         margin-left: 0;
     }
     .hamburger>div {
         background-color: var(--nav-black);
-        width: 40px;
+        width: 26px;
         height: 1px;
-        margin-top: 10px;
+    }
+    .hamburger>div:nth-child(2) {
+        margin-left: 5px;
+        margin-top: 8px;
+    }
+    .hamburger>div:nth-child(3) {
+        margin-left: 10px;
+        margin-top: 8px;
     }
 }
