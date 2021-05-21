@@ -42,3 +42,9 @@ button {
     padding: 1.5em;
 
 }
+
+@media (max-width: 540px) {
+    div.input-group {
+        width: 100%;
+    }
+}
