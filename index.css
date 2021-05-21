@@ -128,6 +128,10 @@ section.third button {
     font-size: 1.2em;
 }
 
+section.third {
+    margin-bottom: 4em;
+}
+
 @media (max-width: 860px) {
     section.third button {
         width: 200px;

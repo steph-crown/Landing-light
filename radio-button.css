@@ -1,0 +1,69 @@
+label.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 20px;
+}
+
+
+.radio-container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.f100 {
+    width: 100%;
+}
+
+
+.radio-container .checkmark {
+    position: absolute;
+    top: 4.1px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #3f67e9bb;
+    box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em var(--blue);
+}
+
+/* .radio-container input:checked ~ .checkmark {
+    background-color: red;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+/* Show the checkmark when checked */
+.radio-container input:checked ~ span.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.radio-container span.checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--white);
+}

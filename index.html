@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./atm-card.css">
     <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./radio-button.css">
     <title>Landing Light</title>
 </head>
 <body>
@@ -98,10 +99,15 @@
                         <label for="postal-code">Postal Code</label>
                         <input type="number" placeholder="Enter Postal Code" value="10119" name="postCode" id="postal-code">
                     </div>
-                    <div class="input-group f100">
+                    <label class="radio-container input-group f100">
+                        Use this card for next time purchase
+                        <input type="radio"  name="" id="check" />
+                        <span class="checkmark"></span>
+                    </label>
+                    <!-- <div class="input-group f100">
                         <input type="radio" name="" id="check">
                         <label for="check">Use this card for next time purchase</label>
-                    </div>
+                    </div> -->
                     <div class="input-group f100">
                         <button type="button">Add Card</button>
                     </div>
