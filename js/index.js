@@ -22,8 +22,7 @@ $('nav .hamburger').addEventListener('click', (event)=> {
     if ($('.nav-content').style.display == "block") closeMenu();
     else openMenu();
     event.stopPropagation();
+});
 
-})
 
-// $('nav .ham').click(function(event){
-//   });
+

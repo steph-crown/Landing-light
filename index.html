@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./atm-card.css">
-    <link rel="stylesheet" href="./form.css">
-    <link rel="stylesheet" href="./radio-button.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/atm-card.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/radio-button.css">
     <title>Landing Light</title>
 </head>
 <body>
@@ -65,8 +65,8 @@
                         <img src="./assets/cagey.png" alt="">
                     </div>
                     <div class="pad">
-                        <h5 class="caps">EXPIRATION DATE</h5>
-                        <h5 class="no-caps">03/04</h5>
+                        <h5 class="caps ">EXPIRATION DATE</h5>
+                        <h5 class="no-caps date">05/04</h5>
                         <div class="flex">
                             <h5>John Doe</h5>
                             <img src="./assets/red-and-yellow-circle.svg" alt="">
@@ -85,11 +85,11 @@
                     <div class="input-group">
                         <label for="card-number">Credit card number
                         </label>
-                        <input type="text" value="4324 5433 9382 1030" placeholder="Enter Card Number" name="cardNumber" id="">
+                        <input type="text" value="4324 5433 9382 1030" placeholder="Enter Card Number" name="cardNumber" id="card-number">
                     </div>
                     <div class="input-group">
                         <label for="exp-date">Expiration date</label>
-                        <input type="date" value="04/05/2000" name="expDate" id="exp-date">
+                        <input type="month" value="2004-05" name="expDate" id="exp-date">
                     </div>
                     <div class="input-group">
                         <label for="security-code">Security code</label>
@@ -143,6 +143,7 @@
         </section>
     </main>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
