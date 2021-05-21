@@ -108,7 +108,31 @@ div.f50 {
     width: 50%;
 } 
 
+.f50 p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1.4em;
+    color: var(--black-text);
+}
+
+.flex .f50:nth-child(2) p {
+    text-align: right;
+}
+
+section.second .flex {
+    align-items: flex-start;
+}
+
+section.third button {
+    width: 300px;
+    font-size: 1.2em;
+}
+
 @media (max-width: 860px) {
+    section.third button {
+        width: 200px;
+        font-size: 1rem;
+    }
     .sm-show, .hamburger {
         display: flex;
     }
@@ -198,5 +222,31 @@ div.f50 {
     
     section.section .right {
         width: 100%;
+    }
+
+}
+
+section.third .total p {
+    font-weight: 700;
+    font-size: 1.6em;
+    color: var(--black-text);
+    text-align: right;
+}
+
+@media (max-width: 580px) {
+    section.third .flex {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    section.third button {
+        width: 100%;
+    }
+
+    section.third .total {
+        width: 100%;
+    }
+    section.third .total p {
+        margin-top: 0.6em;
     }
 }
